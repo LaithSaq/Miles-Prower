@@ -1,0 +1,40 @@
+{
+    // Task written by LaithSaq •︿•
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "'${file}'",
+                "-o", 
+                "'${fileDirname}\\run.exe'" 
+            ],
+            "group": {
+                "kind": "build",
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "never"
+            },
+            "detail": "C/C++: g++ Compile active file into a run.exe executable"
+        },
+        {
+            "label": "run with files",
+            "type": "shell",
+            "command": "./run.exe < input.txt > output.txt",
+            "dependsOn": "compile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "never"
+            },
+            "detail": "C/C++: g++ Run active file with input and output files"
+        }
+    ]
+}
