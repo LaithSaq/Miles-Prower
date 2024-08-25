@@ -1,6 +1,6 @@
 # Miles Prower Workshop
 
-Welcome to Miles Prower's Workshop!  
+Welcome to (Miles/Hour)'s Workshop!  
 (Call it Tails' workshop for short :P)
 
 This repository is my personal coding environment in VSCode, designed for competitive programming contests. 
