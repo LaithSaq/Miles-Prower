@@ -8,11 +8,11 @@
             "command": "g++",
             "args": [
                 "'${file}'",
-                "-o", 
-                "'${fileDirname}\\run.exe'" 
+                "-o",
+                "'${fileDirname}\\run.exe'"
             ],
             "group": {
-                "kind": "build",
+                "kind": "build"
             },
             "problemMatcher": [
                 "$gcc"
