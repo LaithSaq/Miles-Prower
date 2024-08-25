@@ -2,7 +2,7 @@
 
 Welcome to the Miles "Tails" Prower Workshop!
 
-This repository is my coding environment in VSCode, designed for competitive programming contests. 
+This repository is my personal coding environment in VSCode, designed for competitive programming contests. 
 
 > **NOTE:** Don't forget to create `input.txt` next to `main.cpp`
 
