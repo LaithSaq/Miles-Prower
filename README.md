@@ -6,3 +6,4 @@ This repository is my coding environment, designed for competitive programming c
 
 Get ready to code at sonic's speed and reach new heights with ease!
 
+> Don't forget to create `input.txt` around `main.cpp`
