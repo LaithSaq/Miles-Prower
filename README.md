@@ -12,4 +12,4 @@ Inspired by the brilliant mechanic famously known as **Tails the fox**, this wor
 
 Get ready to code at sonic's speed and reach new heights with ease!
 
-*~ created and maintained by LaithSaq* •︿•
+*created and maintained by LaithSaq* •︿•
