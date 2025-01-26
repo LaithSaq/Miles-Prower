@@ -9,3 +9,27 @@ T inverse(T a, T m) {
   assert(m == 1);
   return u;
 }
+
+int mul(int a, int b){
+    return (1LL * a * b) % M;
+}
+
+int pow(int a, int b){
+    int res = 1;
+    while(b){
+        if(b&1){
+            res = mul(res, a);
+        }
+        a = mul(a, a);
+        b >>= 1;
+    }
+    return res;
+}
+
+int choose(int n, int k){
+    vector<int> fact(n+1, 1);
+    for(int i=1; i<=n; i++){
+        fact[i] = mul(fact[i-1], i);
+    }
+    return mul(fact[n], mul(pow(fact[k], M-2), pow(fact[n-k], M-2)));
+}
