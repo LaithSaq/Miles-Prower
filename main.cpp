@@ -25,11 +25,16 @@ typedef pair<int, int> ii;
 #define printL(v) for (auto it : v) printf("%lld ", it); puts("");
 #define oo 1000000007
 
+void precomp(){
+    return;
+}
+
 void solve(){
     // write your code here
 }
 
 int main(){
+    precomp();
     int t=1;
     scanf("%d",&t);
     
