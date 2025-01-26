@@ -7,7 +7,8 @@ using namespace std;
  
 const double PI = acos(-1);
 const int N=2e5 + 10;
-// const int MOD= 998244353 ;
+const int M= 998244353;
+const int MOD = 1e9 + 7;
 typedef long long ll;
 typedef vector<int> vi;
 typedef vector<vi> vvi;
@@ -23,13 +24,17 @@ typedef pair<int, int> ii;
 #define print(v) for (auto it : v) printf("%d ", it); puts("");
 #define printL(v) for (auto it : v) printf("%lld ", it); puts("");
 #define oo 1000000007
-const int MOD = 1e9 + 7;
+
+void precomp(){
+    return;
+}
 
 void solve(){
     // write your code here
 }
 
 int main(){
+    precomp();
     int t=1;
     scanf("%d",&t);
     
