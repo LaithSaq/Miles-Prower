@@ -1,5 +1,5 @@
 // Fenwick Tree
-// 0-based indexing
+// 1-based indexing
 template <typename T>
 class Fenwick{
     vector<T> bit; // TODO: include STL vector
@@ -9,16 +9,16 @@ public:
     Fenwick(int n){
         this->n = n;
         bit.clear();
-        bit.resize(n);
+        bit.resize(n+1);
     }
     void update(int idx, T val){
-        for (; idx < n; idx |= idx + 1){
+        for(; idx <= n; idx += idx & -idx){
             bit[idx] += val;
         }
     }
     T query(int idx){
         T res = 0;
-        for (; idx >= 0; idx = (idx & (idx + 1)) - 1){
+        for(; idx > 0; idx -= idx & -idx){
             res += bit[idx];
         }
         return res;
